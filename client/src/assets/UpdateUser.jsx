@@ -18,7 +18,7 @@ const UpdateUser = () => {
         .catch(err => console.log(err))
     })
    
-   
+    
    const Update = (e) => {
     e.preventDefault();
     axios.put("http://localhost:3001/updateUser/" +id  , {name, email, age })
